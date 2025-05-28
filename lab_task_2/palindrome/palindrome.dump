@@ -1,0 +1,59 @@
+
+palindrome.o:     file format pe-i386
+
+
+Disassembly of section .text:
+
+00000000 <_main>:
+   0:	55                   	push   ebp
+   1:	89 e5                	mov    ebp,esp
+   3:	83 e4 f0             	and    esp,0xfffffff0
+   6:	83 c4 80             	add    esp,0xffffff80
+   9:	e8 00 00 00 00       	call   e <_main+0xe>
+   e:	c7 44 24 78 01 00 00 	mov    DWORD PTR [esp+0x78],0x1
+  15:	00 
+  16:	c7 04 24 00 00 00 00 	mov    DWORD PTR [esp],0x0
+  1d:	e8 00 00 00 00       	call   22 <_main+0x22>
+  22:	8d 44 24 10          	lea    eax,[esp+0x10]
+  26:	89 44 24 04          	mov    DWORD PTR [esp+0x4],eax
+  2a:	c7 04 24 11 00 00 00 	mov    DWORD PTR [esp],0x11
+  31:	e8 00 00 00 00       	call   36 <_main+0x36>
+  36:	8d 44 24 10          	lea    eax,[esp+0x10]
+  3a:	89 04 24             	mov    DWORD PTR [esp],eax
+  3d:	e8 00 00 00 00       	call   42 <_main+0x42>
+  42:	89 44 24 74          	mov    DWORD PTR [esp+0x74],eax
+  46:	c7 44 24 7c 00 00 00 	mov    DWORD PTR [esp+0x7c],0x0
+  4d:	00 
+  4e:	eb 30                	jmp    80 <_main+0x80>
+  50:	8d 54 24 10          	lea    edx,[esp+0x10]
+  54:	8b 44 24 7c          	mov    eax,DWORD PTR [esp+0x7c]
+  58:	01 d0                	add    eax,edx
+  5a:	0f b6 10             	movzx  edx,BYTE PTR [eax]
+  5d:	8b 44 24 74          	mov    eax,DWORD PTR [esp+0x74]
+  61:	2b 44 24 7c          	sub    eax,DWORD PTR [esp+0x7c]
+  65:	83 e8 01             	sub    eax,0x1
+  68:	0f b6 44 04 10       	movzx  eax,BYTE PTR [esp+eax*1+0x10]
+  6d:	38 c2                	cmp    dl,al
+  6f:	74 0a                	je     7b <_main+0x7b>
+  71:	c7 44 24 78 00 00 00 	mov    DWORD PTR [esp+0x78],0x0
+  78:	00 
+  79:	eb 18                	jmp    93 <_main+0x93>
+  7b:	83 44 24 7c 01       	add    DWORD PTR [esp+0x7c],0x1
+  80:	8b 44 24 74          	mov    eax,DWORD PTR [esp+0x74]
+  84:	89 c2                	mov    edx,eax
+  86:	c1 ea 1f             	shr    edx,0x1f
+  89:	01 d0                	add    eax,edx
+  8b:	d1 f8                	sar    eax,1
+  8d:	3b 44 24 7c          	cmp    eax,DWORD PTR [esp+0x7c]
+  91:	7f bd                	jg     50 <_main+0x50>
+  93:	83 7c 24 78 00       	cmp    DWORD PTR [esp+0x78],0x0
+  98:	74 0e                	je     a8 <_main+0xa8>
+  9a:	c7 04 24 14 00 00 00 	mov    DWORD PTR [esp],0x14
+  a1:	e8 00 00 00 00       	call   a6 <_main+0xa6>
+  a6:	eb 0c                	jmp    b4 <_main+0xb4>
+  a8:	c7 04 24 1f 00 00 00 	mov    DWORD PTR [esp],0x1f
+  af:	e8 00 00 00 00       	call   b4 <_main+0xb4>
+  b4:	b8 00 00 00 00       	mov    eax,0x0
+  b9:	c9                   	leave  
+  ba:	c3                   	ret    
+  bb:	90                   	nop
