@@ -1,0 +1,31 @@
+
+div.o:     file format pe-i386
+
+
+Disassembly of section .text:
+
+00000000 <_main>:
+   0:	55                   	push   ebp
+   1:	89 e5                	mov    ebp,esp
+   3:	83 e4 f0             	and    esp,0xfffffff0
+   6:	83 ec 20             	sub    esp,0x20
+   9:	e8 00 00 00 00       	call   e <_main+0xe>
+   e:	8b 44 24 1c          	mov    eax,DWORD PTR [esp+0x1c]
+  12:	89 44 24 04          	mov    DWORD PTR [esp+0x4],eax
+  16:	c7 04 24 00 00 00 00 	mov    DWORD PTR [esp],0x0
+  1d:	e8 00 00 00 00       	call   22 <_main+0x22>
+  22:	8b 44 24 1c          	mov    eax,DWORD PTR [esp+0x1c]
+  26:	89 c2                	mov    edx,eax
+  28:	c1 ea 1f             	shr    edx,0x1f
+  2b:	01 d0                	add    eax,edx
+  2d:	d1 f8                	sar    eax,1
+  2f:	89 44 24 18          	mov    DWORD PTR [esp+0x18],eax
+  33:	8b 44 24 18          	mov    eax,DWORD PTR [esp+0x18]
+  37:	89 44 24 04          	mov    DWORD PTR [esp+0x4],eax
+  3b:	c7 04 24 0a 00 00 00 	mov    DWORD PTR [esp],0xa
+  42:	e8 00 00 00 00       	call   47 <_main+0x47>
+  47:	b8 00 00 00 00       	mov    eax,0x0
+  4c:	c9                   	leave  
+  4d:	c3                   	ret    
+  4e:	90                   	nop
+  4f:	90                   	nop
