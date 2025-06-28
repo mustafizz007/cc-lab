@@ -1,0 +1,13 @@
+
+
+int main() {
+    int count = 5;
+
+    while (count > 0) {
+        printf("Countdown: %d\n", count);
+        count--;
+    }
+
+    printf("Liftoff!\n");
+    return 0;
+}

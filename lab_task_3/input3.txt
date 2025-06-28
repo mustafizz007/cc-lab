@@ -1,0 +1,21 @@
+
+
+int main() {
+    int x, y;
+    char op;
+
+    cout << "Enter two numbers: ";
+    cin >> x >> y;
+
+    cout << "Enter operator (+ or -): ";
+    cin >> op;
+
+    if (op == '+')
+        cout << "Result: " << (x + y) << endl;
+    else if (op == '-')
+        cout << "Result: " << (x - y) << endl;
+    else
+        cout << "Invalid operator." << endl;
+
+    return 0;
+}
