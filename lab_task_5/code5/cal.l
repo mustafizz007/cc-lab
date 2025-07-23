@@ -5,7 +5,7 @@
 %}
 
 digit [0-9]
-num {digit}{digit}*
+num [+-]?{digit}+
 delim [ \t\n]
 letter[A-Za-z]
 under[_]
@@ -31,12 +31,16 @@ ws {}
 "!=" {return (NOT_EQUAL);}
 "%" {return (MOD);}
 "==" {return (EQUAL);}
-"<=" {return (SEQUAL);}
-"++" {return (INC);}
-"while" {return (WHILE);}
+"switch" {return (SWITCH);}
+"case" {return (CASE);}
+"default" {return (DEFAULT);}
+":" {return (COLON);}
+"break" {return(BREAK);}
 
 
-{num} {yylval = atoi(yytext); return (INT_NUM);}
+
+
+{num} { yylval = atoi(yytext); return (INT_NUM); }
 {float_num} {yylval = atof(yytext); return(FLOAT_NUM);}
 
 

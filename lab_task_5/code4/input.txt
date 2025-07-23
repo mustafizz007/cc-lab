@@ -1,8 +1,5 @@
-int n = 3;
-int res;
-if (n % 2 == 0){
-    res = 1;
-}
-else{
-    res = 0;
-}
+int i = 1;
+
+    while (i <= 100) { 
+        i ++;
+    }
