@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/lex_projects/lab_task_4",
-      "program": "c:/lex_projects/lab_task_4/build/Debug/outDebug",
+      "cwd": "c:/lex_projects/lab_task_3",
+      "program": "c:/lex_projects/lab_task_3/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

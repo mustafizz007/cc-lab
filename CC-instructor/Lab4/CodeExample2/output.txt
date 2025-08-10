@@ -1,0 +1,4 @@
+In line no 4, ID a is not declared.
+In line no 4, Data type UNDEF_TYPE is not matched with Data type INT_TYPE.
+Function main declared with return type INT_TYPE
+Parsing finished!
