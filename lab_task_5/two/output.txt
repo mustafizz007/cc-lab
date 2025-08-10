@@ -1,0 +1,7 @@
+In line no 1, Inserting a with type INT_TYPE in symbol table.
+In line no 2, Inserting b with type INT_TYPE in symbol table.
+In line no 3, Inserting c with type INT_TYPE in symbol table.
+In line no 11, Inserting d with type INT_TYPE in symbol table.
+In line no 17, Inserting e with type CHAR_TYPE in symbol table.
+In line no 23, Inserting f with type REAL_TYPE in symbol table.
+Parsing finished!
