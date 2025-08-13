@@ -1,0 +1,24 @@
+In line no 2, Inserting function sumArray with return type INT_TYPE and 2 parameters.
+In line no 4, Inserting function main with return type INT_TYPE and 0 parameters.
+In line no 5, Inserting array numbers with type INT_TYPE and size 4.
+In line no 6, Inserting i with type INT_TYPE in symbol table.
+In line no 7, Inserting total with type REAL_TYPE in symbol table.
+In line no 8, Inserting length with type INT_TYPE in symbol table.
+In line no 9, Inserting flag with type CHAR_TYPE in symbol table.
+In line no 12, Function sumArray expects 2 parameters but got 1.
+In line no 12, Data type REAL_TYPE is not compatible with Data type UNDEF_TYPE.
+In line no 12, Type mismatch in assignment.
+In line no 14, Data type CHAR_TYPE is not compatible with Data type REAL_TYPE.
+In line no 14, Type mismatch in assignment.
+In line no 16, Printf format specifier and argument type should be verified (%d with float, %f with char detected).
+In line no 18, Printf format specifier and argument type should be verified (%d with float, %f with char detected).
+In line no 19, Printf format specifier and argument type should be verified (%d with float, %f with char detected).
+In line no 22, Function sumArray is declared more than once.
+In line no 23, Same variable i is declared more than once.
+In line no 24, Inserting sum with type REAL_TYPE in symbol table.
+In line no 26, ID size is not declared.
+In line no 26, Data type INT_TYPE is not compatible with Data type UNDEF_TYPE.
+In line no 27, ID arr is not declared.
+In line no 27, Data type REAL_TYPE is not compatible with Data type UNDEF_TYPE.
+In line no 27, Type mismatch in += assignment.
+Semantic analysis completed!

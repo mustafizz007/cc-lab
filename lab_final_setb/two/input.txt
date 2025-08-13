@@ -1,0 +1,30 @@
+#include <stdio.h>
+int sumArray(int arr[], int size);
+
+int main() {
+    int numbers[4];  
+    int i;
+    double total;
+    int length;
+    char flag;
+
+    total = sumArray(numbers, length);  
+    total = sumArray(numbers);  
+
+    flag = total;  
+    if (flag == "Y") {
+        printf("Flag set!\n");
+    }
+    printf("Total: %d\n", total); 
+    printf("Flag: %f\n", flag);   
+    return 0;
+}
+double sumArray(int arr[], int size, int extra) {
+    int i;
+    double sum = 0;
+
+    for (i = 0; i < size; i++) {
+        sum += arr[i]; // arr[i] uninitialized
+    }
+    return sum;
+}
