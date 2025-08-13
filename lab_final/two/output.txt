@@ -1,7 +1,20 @@
-In line no 1, Inserting a with type INT_TYPE in symbol table.
-In line no 2, Inserting b with type INT_TYPE in symbol table.
-In line no 3, Inserting c with type INT_TYPE in symbol table.
-In line no 11, Inserting d with type INT_TYPE in symbol table.
-In line no 17, Inserting e with type CHAR_TYPE in symbol table.
-In line no 23, Inserting f with type REAL_TYPE in symbol table.
-Parsing finished!
+In line no 2, Inserting function computeAverage with return type REAL_TYPE and 2 parameters.
+In line no 3, Inserting function main with return type INT_TYPE and 0 parameters.
+In line no 4, Inserting array marks with type INT_TYPE and size 5.
+In line no 5, Inserting i with type INT_TYPE in symbol table.
+In line no 6, Inserting avg with type REAL_TYPE in symbol table.
+In line no 7, Inserting totalMarks with type INT_TYPE in symbol table.
+In line no 8, Inserting grade with type CHAR_TYPE in symbol table.
+In line no 12, Function computeAverage expects 2 parameters but got 1.
+In line no 12, Data type REAL_TYPE is not compatible with Data type UNDEF_TYPE.
+In line no 12, Type mismatch in assignment.
+In line no 13, Data type CHAR_TYPE is not compatible with Data type REAL_TYPE.
+In line no 13, Type mismatch in assignment.
+In line no 14, Data type CHAR_TYPE is not compatible with Data type REAL_TYPE.
+In line no 23, Function computeAverage is declared more than once.
+In line no 24, ID total is not declared.
+In line no 24, ID bonus is not declared.
+In line no 24, Data type UNDEF_TYPE is not compatible with Data type UNDEF_TYPE.
+In line no 24, ID count is not declared.
+In line no 24, Data type UNDEF_TYPE is not compatible with Data type UNDEF_TYPE.
+Semantic analysis completed!

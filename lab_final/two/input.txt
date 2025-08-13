@@ -1,26 +1,25 @@
-int a;
-int b; //declare b
-int c; //declare c
+#include <stdio.h>
+float computeAverage(int total, int count);
+int main() {
+    int marks[5];         
+    int i;
+    float avg;
+    int totalMarks;
+    char grade;
+    for (i = 0; i < 5; i++) {
+        totalMarks += marks[i];  
+    }
+    avg = computeAverage(totalMarks);  
+    grade = avg;  
+    if (grade > 60.5) {
+        printf("Passed!\n");
+    }
+    printf("Average: %d\n", avg);   
+    printf("Grade: %f\n", grade);   
 
-a=10;
-b=3;
-c=5; //now c is declared
-
-if (b > 3){
-
-    int d;
-    d = 1;
-
+    return 0;
 }
-else if (b < 2){
 
-    char e;
-    e = 'x';
-
-}
-else{
-
-    double f;
-    f = 3.14;
-
+float computeAverage(int total, int count, int bonus) {
+    return (total + bonus) / count;
 }

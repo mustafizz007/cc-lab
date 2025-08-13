@@ -39,33 +39,49 @@
       know about them.  */
    enum yytokentype {
      INT = 258,
-     IF = 259,
-     ELSE = 260,
-     WHILE = 261,
-     CONTINUE = 262,
-     BREAK = 263,
-     PRINT = 264,
-     DOUBLE = 265,
-     CHAR = 266,
-     VOID = 267,
-     RETURN = 268,
-     ADDOP = 269,
-     SUBOP = 270,
-     MULOP = 271,
-     DIVOP = 272,
-     EQUOP = 273,
-     LT = 274,
-     GT = 275,
-     LPAREN = 276,
-     RPAREN = 277,
-     LBRACE = 278,
-     RBRACE = 279,
-     SEMI = 280,
-     ASSIGN = 281,
-     ID = 282,
-     ICONST = 283,
-     FCONST = 284,
-     CCONST = 285
+     FLOAT = 259,
+     IF = 260,
+     ELSE = 261,
+     FOR = 262,
+     WHILE = 263,
+     CONTINUE = 264,
+     BREAK = 265,
+     PRINTF = 266,
+     DOUBLE = 267,
+     CHAR = 268,
+     VOID = 269,
+     RETURN = 270,
+     ADDOP = 271,
+     SUBOP = 272,
+     MULOP = 273,
+     DIVOP = 274,
+     INCOP = 275,
+     DECOP = 276,
+     ADDASSIGN = 277,
+     EQUOP = 278,
+     NEOP = 279,
+     LT = 280,
+     GT = 281,
+     GE = 282,
+     LE = 283,
+     LPAREN = 284,
+     RPAREN = 285,
+     LBRACE = 286,
+     RBRACE = 287,
+     LBRACK = 288,
+     RBRACK = 289,
+     SEMI = 290,
+     COMMA = 291,
+     ASSIGN = 292,
+     ID = 293,
+     STRING = 294,
+     ICONST = 295,
+     FCONST = 296,
+     CCONST = 297,
+     OR = 298,
+     AND = 299,
+     UMINUS = 300,
+     LOWER_THAN_ELSE = 301
    };
 #endif
 
@@ -76,15 +92,17 @@ typedef union YYSTYPE
 {
 
 /* Line 1685 of yacc.c  */
-#line 12 "parser.y"
+#line 15 "parser.y"
 
     char str_val[100];
     int int_val;
+    float float_val;
+    param_list* param_list_val;
 
 
 
 /* Line 1685 of yacc.c  */
-#line 88 "parser.tab.h"
+#line 106 "parser.tab.h"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
